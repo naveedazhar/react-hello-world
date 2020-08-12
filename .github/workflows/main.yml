@@ -14,7 +14,6 @@ jobs:
               with:
                node-version: 12.x
 
-            - run: yarn build 
             - run: npm run build 
 
             - run: npm install -g surge
