@@ -14,9 +14,8 @@ jobs:
               with:
                node-version: 12.x
 
-            - name: Setup NodeJs
-              run: yarn build 
-              run: npm run build 
+            - run: yarn build 
+            - run: npm run build 
 
             - run: npm install -g surge
             - run: echo "Deploying website"
